@@ -21,9 +21,9 @@ echo
 
 
 echo "cloning repo"
-git clone https://github.com/vishuhanda/appiumappcenter.git
+git clone https://github.com/vishuhanda/browserstackappium.git
 echo "cloning done"
-cd appiumappcenter
+cd browserstackappium
 echo "navigated to directory"
 echo "navigated to directory"
 # mvn -DskipTests -P prepare-for-upload package 
