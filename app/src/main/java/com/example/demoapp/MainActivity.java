@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        AppCenter.start(getApplication(), "37c1fed4-a263-4776-8391-08036f2a9898",
+        AppCenter.start(getApplication(), "0f72484d-1b07-4016-b239-1eeb7e4217d6",
                 Analytics.class, Crashes.class);
 
 
