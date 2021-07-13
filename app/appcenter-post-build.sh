@@ -29,21 +29,21 @@ echo "navigated to directory"
 mvn -DskipTests -P prepare-for-upload package 
 echo "uploading test cases"
 echo "Running app center"
-appcenter test run appium --app  $appName --devices $deviceSetName --app-path $APPCENTER_OUTPUT_DIRECTORY/*.apk --test-series $testSeriesName  --locale "en_US" --token $token --build-dir $PWD/target/upload
+# appcenter test run appium --app  $appName --devices $deviceSetName --app-path $APPCENTER_OUTPUT_DIRECTORY/*.apk --test-series $testSeriesName  --locale "en_US" --token $token --build-dir $PWD/target/upload
 
 
-appcenter distribute release --app $appName --file $APPCENTER_OUTPUT_DIRECTORY/*.apk --group "betatesters" --token $token
+# appcenter distribute release --app $appName --file $APPCENTER_OUTPUT_DIRECTORY/*.apk --group "betatesters" --token $token
 
 
 
 
-# mvn clean install -Dsuitexml=testng.xml 
-# if [ $? -eq 0 ]; then
-#     echo "Maven Build successfully made"
-#     echo "distributing app"
-#     appcenter distribute release --app $appName --file $APPCENTER_OUTPUT_DIRECTORY/*.apk --group "betatesters" --token $token
-#     echo "app distributed"
-# else
-#     echo "Build Failed"
-# fi
+mvn clean install -Dsuitexml=testng.xml 
+if [ $? -eq 0 ]; then
+    echo "Maven Build successfully made"
+    echo "distributing app"
+    appcenter distribute release --app $appName --file $APPCENTER_OUTPUT_DIRECTORY/*.apk --group "betatesters" --token $token
+    echo "app distributed"
+else
+    echo "Build Failed"
+fi
 
