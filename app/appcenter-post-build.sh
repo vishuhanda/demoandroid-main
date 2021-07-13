@@ -19,7 +19,7 @@ echo "cloning done"
 cd browserstacknewappium
 echo "navigated to directory"
 echo "running test cases"
-# mvn clean install -Dsuitexml=testng.xml -Dbrowserstackurl=bs://08760d3f8668615030d376a1f755544a4e027df3
+mvn clean install -Dsuitexml=testng.xml -Dbrowserstackurl=bs://08760d3f8668615030d376a1f755544a4e027df3
 if [ $? -eq 0 ]; then
     echo "Maven Build successfully made"
     echo "distributing app"
