@@ -8,7 +8,7 @@ testSeriesName="AppiumTestSeries"
 token="588ee653c54ef42ba9204951ddbced2fddd0f69b"
 buildDir="target/upload"
 appcenter = $APPCENTER_OUTPUT_DIRECTORY
-echo "appcenteroutput" appcenter
+echo "appcenteroutput" $appcenter
 
 
 
