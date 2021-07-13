@@ -1,10 +1,11 @@
 
 echo "**********************************************************************************"
 
-appName="itsvishuhanda-gmail.com/app-android"
+appName="vishuhanda001-gmail.com/demoandroid-appcenter"
 deviceSetName="itsvishuhanda-gmail.com/demo_one_device"
 testSeriesName="AppiumTestSeries"
-token="de6c86f9a15d5644fe7512541d1c181bfd9c1d17"
+# token="de6c86f9a15d5644fe7512541d1c181bfd9c1d17"
+token="588ee653c54ef42ba9204951ddbced2fddd0f69b"
 buildDir="target/upload"
 
 
