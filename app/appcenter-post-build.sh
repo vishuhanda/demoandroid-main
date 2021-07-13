@@ -26,9 +26,9 @@ echo "cloning done"
 cd appiumappcenter
 echo "navigated to directory"
 echo "navigated to directory"
-mvn -DskipTests -P prepare-for-upload package 
-echo "uploading test cases"
-echo "Running app center"
+# mvn -DskipTests -P prepare-for-upload package 
+# echo "uploading test cases"
+# echo "Running app center"
 # appcenter test run appium --app  $appName --devices $deviceSetName --app-path $APPCENTER_OUTPUT_DIRECTORY/*.apk --test-series $testSeriesName  --locale "en_US" --token $token --build-dir $PWD/target/upload
 
 
@@ -36,7 +36,7 @@ echo "Running app center"
 
 
 
-
+echo "Running test cases"
 mvn clean install -Dsuitexml=testng.xml 
 if [ $? -eq 0 ]; then
     echo "Maven Build successfully made"
